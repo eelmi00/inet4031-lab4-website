@@ -1,18 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lightbulb Toggle Demo</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            font-size: 16px;
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
 <body>
 
-<h2>Simple Web Page with HTML and JavaScript</h2>
+    <h2>Lightbulb Switch – Demo by Elmi Elmi</h2>
 
-<p>JavaScript can change HTML attribute values.</p>
+    <p>
+        This page demonstrates how <strong>JavaScript</strong> can be used to
+        interact with HTML elements. Click the buttons below to switch the lightbulb on or off.
+    </p>
 
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <img id="myImage" src="pic_bulboff.gif" alt="Lightbulb" style="width:150px;">
 
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+    <div>
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn On</button>
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn Off</button>
+    </div>
 
 </body>
 </html>
